@@ -1,0 +1,57 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #333;
+}
+
+.table-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.cities-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+.cities-table th, .cities-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.city-row {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.city-row:hover {
+  background-color: #f2f2f2;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+/* Weather Page */
+.weather-details {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .cities-table {
+    font-size: 14px;
+  }
+}

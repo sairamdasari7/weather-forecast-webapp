@@ -1,13 +1,25 @@
+/* Import Tailwind CSS classes for responsive design */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  @apply font-sans bg-gray-100 text-gray-900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+table {
+  @apply w-full table-auto border-collapse;
+}
+
+thead th {
+  @apply bg-blue-100 p-2 text-left;
+}
+
+tbody td {
+  @apply p-2 border-t;
+}
+
+.weather-details {
+  @apply bg-blue-100 p-4 rounded-lg shadow-lg;
 }
