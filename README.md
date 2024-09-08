@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+# Weather Forecast Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    This is a responsive web application that allows users to search for cities and view their current weather conditions. The application is built with React and TypeScript and utilizes the OpenWeatherMap API to fetch real-time weather data. It features city searching, dynamic routing, and weather details display.
 
-## Available Scripts
+## Website Live URL: https://weatherforecastingwebapplication.netlify.app/
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+   - City List: Displays a list of cities with their country and timezone.
+   - Search Functionality: Allows users to search for cities in real-time.
+   - Weather Details: Clicking on a city shows the current weather information such as temperature, weather condition, humidity, and wind speed.
+   - Responsive Design: The application is fully responsive and works on all device sizes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  - React: For building the user interface.
+  - TypeScript: To add static typing and ensure type safety.
+  - OpenWeatherMap API: For fetching weather data.
+  - CSS: For styling the application and making it responsive.
+  - React Router: For client-side routing and navigation.
 
-### `npm test`
+## Getting Started
+  
+### Prerequisites
+   - Node.js and npm should be installed on your machine. You can download them from here.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
+  
+  1. Clone the repository:
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/sairamdasari7/weather-forecast-webapp.git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  2. Navigate into the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ```bash
+    cd weather-forecast-app
+  
+  3. Install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    npm install
+    
+  4. Get an OpenWeatherMap API key:
 
-### `npm run eject`
+    - Sign up for a free API key from the OpenWeatherMap website.
+    - Replace YOUR_API_KEY in src/components/WeatherDetails.tsx with your actual API key:
+    - typescript
+    
+     ```bash
+     const apiKey = 'YOUR_API_KEY';
+     
+  5. Running the Application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+    - To run the application locally:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    npm start
+    
+  6. The application will be available at http://localhost:3000.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Building for Production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - To build the app for production:
 
-## Learn More
+    ```bash
+    npm run build
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - The production-ready files will be created in the build/ directory.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Usage
+
+  - On the Cities Page, you will see a list of cities with their respective country and timezone.
+  - You can search for cities using the search bar at the top of the table.
+  - Clicking on a city row will navigate you to the Weather Page, where you can view the weather details for that specific city.
+  - The weather information includes temperature, weather condition, humidity, and wind speed.
+
+### Environment Variables
+
+  - You need to set your OpenWeatherMap API Key in WeatherDetails.tsx.
+   
+### API Used
+  
+  - OpenWeatherMap API: Provides the current weather data for cities around the world. Learn more about the API here.
+
+### Folder Structure
+
+  - public/: Contains the HTML template and static assets.
+  - src/:
+  - components/: Reusable UI components like city tables, search bar, and weather details.
+  - pages/: Main pages of the application, such as the Cities and Weather pages.
+  - state/: Context for managing weather data across the application.
+  - styles/: Global and component-specific styles for the application.
+
+### License
+
+  - This project is licensed under the MIT License - see the LICENSE file for details.
+
+### Happy Coding!
+
+  = This README.md covers the full project details, including instructions for running the app, the technologies used, and the API key setup.
